@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>50보다 작은 수가 있는지 알아보기</title>
+  </head>
+  <body>
+    <script>
+      let num1 = prompt("첫번째 숫자를 입력하세요.");
+      let num2 = prompt("두번째 숫자를 입력하세요.");
+      if (num1 !== null && num2 != null) {
+        if (num1 < 50 && num2 < 50) {
+          alert("모두 50보다 작은 수입니다.");
+        } else {
+          alert("모두 50보다 크거나, 2개 중에 1개는 무조건 50보다 큽니다.");
+        }
+      } else {
+        alert("사용자가 취소하였습니다.");
+      }
+    </script>
+  </body>
+</html>

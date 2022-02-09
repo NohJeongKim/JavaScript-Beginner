@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문 X 대화상자</title>
+  </head>
+  <body>
+    <script>
+      let is3Multiple = prompt("숫자를 입력하세요.");
+      if (is3Multiple !== null) {
+        if (is3Multiple % 3 == 0) {
+          alert(is3Multiple + "은 3의 배수입니다.");
+        } else {
+          alert(is3Multiple + "은 3의 배수가 아닙니다.");
+        }
+      } else {
+        alert(is3Multiple + "을 입력하지 않고, 취소하였습니다.");
+      }
+    </script>
+  </body>
+</html>
