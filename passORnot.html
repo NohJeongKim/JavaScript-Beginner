@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건이 일치하면 통과시키기</title>
+  </head>
+  <body>
+    <script>
+      /*
+    여군 & 운전 면허 소지 & 시력이 좋다. 여군 (7%) > 시력 (60%) > 운전 면허 (80%) 
+    순서로~!
+    성능 최적화에 도움을 준다. 
+     */
+      // 이름이 TOM이거나 성인이면 통과
+      let name = prompt("이름이 어떻게 되시나요?");
+      let isAdult = prompt("나이가 몇 살이십니까?");
+      if ((name !== null) && (isAdult !== null)) {
+        if ((name === "TOM") || (isAdult >= 20)) {
+          alert("당신은 통과하실 수 있습니다.");
+        } else {
+          alert("당신은 통과하실 수 없습니다.");
+        }
+      } else {
+        alert("취소하셨기에, 당신은 통과하실 수 없습니다.");
+      } 
+      /* 
+      궁금한 점: 왜 name에서 null을 선택했는데, 
+      왜 isAdult 부분으로 넘어가는지 잘 모르겠다.
+      */
+    </script>
+  </body>
+</html>
