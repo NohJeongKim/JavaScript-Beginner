@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>관심있는 세션 선택하기</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+      body{
+        background-color: rgba(3, 3, 59, 0.788);
+      }
+      div {
+        font-family: "Gugi", cursive;
+        font-size: 20px;
+        color: white;
+        margin: 50px auto;
+        width: 600px; /* margin 설정 > width 맞춰주기. */
+      }
+      strong{
+        font-size: 80px;
+        color: rgb(245, 245, 46);
+        text-shadow: 3px 3px black;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.write("<div>"); // 태그를 추가하고 싶은 경우 이렇게 추가하기~!
+      const session = prompt(
+        "관심있는 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인"
+      );
+      switch (session) {
+        case "1":
+          document.write(
+            "<p>마케팅 세션은 <strong>201호</strong>에서 진행됩니다.</p>"
+          );
+          break;
+        case "2":
+          document.write(
+            "<p>개발 세션은 <strong>202호</strong>에서 진행됩니다.</p>"
+          );
+          break;
+        case "3":
+          document.write(
+            "<p>디자인 세션은 <strong>203호</strong>에서 진행됩니다.</p>"
+          );
+          break;
+        default:
+          document.write(
+            "<p>그런 세션은 <strong>존재하지 않습니다.</strong></p>"
+          );
+      }
+      document.write("</div>");
+    </script>
+  </body>
+</html>
