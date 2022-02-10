@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>값을 입력받아서 팩토리얼 계산해주기</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h3>for 문을 이용해서 팩토리얼 계산해주기</h3>");
+      let number = prompt("숫자를 입력하세요.");
+      if (number != null) {
+        let result = 1;
+        for (i = 1; i <= number; i++) {
+          result *= i;
+        }
+        document.write(number + "!=" + result);
+      } else {
+        document.write("값을 입력받지 못하였습니다.");
+      }
+    </script>
+  </body>
+</html>
