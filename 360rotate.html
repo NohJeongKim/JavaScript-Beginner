@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>360도 회전하기</title>
+    <style>
+      .container {
+        margin: 50px auto;
+        width: 300px;
+      }
+      img {
+        border-radius: 50%;
+        box-shadow: 3px 3px 20px black;
+        animation: rotateBear 3s infinite;
+      }
+      @keyframes rotateBear {
+        from {
+          transform: perspective(200px) rotateY(0deg);
+        }
+        50% {
+          transform: perspective(200px) rotateY(-180deg);
+        }
+        to {
+          transform: perspective(200px) rotateY(-360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/bear.jpg" />
+    </div>
+  </body>
+</html>
