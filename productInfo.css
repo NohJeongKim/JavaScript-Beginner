@@ -1,0 +1,37 @@
+.container {
+  margin: 20px auto;
+  width: 1000px;
+}
+h1 {
+  text-align: center;
+}
+.prodList li {
+  list-style: none;
+  float: left;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.prodList img {
+  /* 이것이 중요하다~! 이거 안 해주면 글자가 가려져서 안 보인다. */
+  float: left;
+}
+.prodList .caption {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 300px;
+  height: 200px;
+  opacity: 0; /* 평상시에는 안 보이게 처리해준다. */
+  transition: all 0.6s ease-in-out; /* 모든 속성이 0.6초 동안 천천히 들어가고, 천천히 나온다. */
+}
+/* 마우스를 올렸을 때, 정보가 나오도록 설정해주기~! */
+.prodList li:hover .caption {
+  opacity: 1;
+  /* 원래 transform 이용해서 움직임을 넣어줘야 하는데, 사이즈가 맞지 않아서 빼도록 하였다. */
+}
+.prodList .caption h2,
+.prodList .caption p {
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
